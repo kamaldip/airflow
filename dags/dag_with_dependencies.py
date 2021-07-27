@@ -32,9 +32,9 @@ default_args = {
     'retry_delay': timedelta(minutes=1)
 }
 dag = DAG(
-    'hello_world',
+    'dag_with_dependencies',
     default_args=default_args,
-    description='hello world',
+    description='A dag that depends on internal packages and external modules',
     schedule_interval='@once',
     tags=["simple"]
 )

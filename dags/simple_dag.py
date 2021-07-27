@@ -21,9 +21,9 @@ default_args = {
     'retry_delay': timedelta(minutes=1)
 }
 dag = DAG(
-    'hello_world',
+    'simple_dag',
     default_args=default_args,
-    description='hello world',
+    description='A basic hello world template',
     schedule_interval='@once',
     tags=["simple"]
 )
