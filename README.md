@@ -19,7 +19,10 @@ six==1.16.0
 ```
 
 3. Upload the requirements.txt file to the root of the S3 bucket
-4. Go to Amazon Managed Workflows and create a new environment
+    1. Note: creating this dummy file here as you cannot create an environment when it points to a `requirements.txt` file that doesn't exist
+    2. The alternative is to not configure the requirements field, then update your environment config when you've uploaded the `requirements.txt` file
+    3. Neither is ideal to be honest
+5. Go to Amazon Managed Workflows and create a new environment
     1. Give it the name `test-workflows`
     2. Use Airflow version 2.0.2 (Latest)
     3. Set the S3 bucket to `s3://test-workflows-bucket`
