@@ -1,6 +1,5 @@
 import logging
 from datetime import timedelta
-
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.operators.dummy import DummyOperator
