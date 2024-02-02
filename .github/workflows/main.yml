@@ -1,7 +1,6 @@
 name: CI for MWAA
 on:
  push:
-
 jobs:
   main:
     runs-on: ubuntu-latest
