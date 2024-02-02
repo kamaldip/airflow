@@ -1,9 +1,7 @@
 name: CI for MWAA
 on:
  push:
- env:
-	  BUCKET_NAME : "<your-mwaa-bucket-name>"
-	  AWS_REGION : "<example-aws-region>"
+
 jobs:
   main:
     runs-on: ubuntu-latest
